@@ -15,16 +15,16 @@ class KotlinSpringBootSaveImageMySqlApplication {
     @Bean
     fun imageProcess(imageRepository: ImageRepository) = CommandLineRunner {
         // image 1
-        val backImgFile = ClassPathResource("image/jsa_about_img_black_background.png")
+        val backImgFile = ClassPathResource("image/Angular.png")
         var arrayPic = ByteArray(backImgFile.contentLength().toInt())
         backImgFile.inputStream.read(arrayPic)
-        val blackImage = ImageModel(1, "JSA-ABOUT-IMAGE-BLACK-BACKGROUND", "png", arrayPic)
+        val blackImage = ImageModel(1, "Angular", "png", arrayPic)
 
         // image 2
-        val blueImgFile = ClassPathResource("image/jsa_about_img_blue_background.png")
+        val blueImgFile = ClassPathResource("image/boot.png")
         arrayPic = ByteArray(blueImgFile.contentLength().toInt())
         blueImgFile.inputStream.read(arrayPic)
-        val blueImage = ImageModel(2, "JSA-ABOUT-IMAGE-BLUE-BACKGROUND", "png", arrayPic)
+        val blueImage = ImageModel(2, "boot", "png", arrayPic)
 
         // store image to MySQL via SpringJPA
         imageRepository.save(blackImage)

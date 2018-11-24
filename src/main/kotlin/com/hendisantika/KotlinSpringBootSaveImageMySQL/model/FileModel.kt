@@ -1,5 +1,7 @@
 package com.hendisantika.KotlinSpringBootSaveImageMySQL.model
 
+import javax.persistence.*
+
 /**
  * Created by IntelliJ IDEA.
  * Project : Kotlin-Spring-Boot-Save-Image-MySQL

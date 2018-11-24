@@ -1,6 +1,7 @@
 package com.hendisantika.KotlinSpringBootSaveImageMySQL.repository
 
 import com.hendisantika.KotlinSpringBootSaveImageMySQL.model.ImageModel
+import org.springframework.data.jpa.repository.JpaRepository
 
 /**
  * Created by IntelliJ IDEA.
